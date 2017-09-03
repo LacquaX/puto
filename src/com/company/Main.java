@@ -9,11 +9,11 @@ public class Main {
         String operacion = (args[0]);
         Integer primerNumero = Integer.parseInt(args[1]);
         Integer segundoNumero = Integer.parseInt(args[2]);
-        resultado(operacion, primerNumero, segundoNumero);
+        result(operacion, primerNumero, segundoNumero);
         Arrays.stream(args).forEach(System.out::println);
     }
 
-    private static void resultado(String operacion, Integer primerNumero, Integer segundoNumero) {
+    private static void result(String operacion, Integer primerNumero, Integer segundoNumero) {
         if (operacion.equals("suma")) {
             Integer suma = primerNumero + segundoNumero;
             System.out.println(suma);
